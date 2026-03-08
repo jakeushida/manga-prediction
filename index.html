@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Piece Final Chapter Predictor</title>
+    <meta name="description"
+        content="Predict the release date of the final chapter of One Piece using historical publication data.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="background-animation"></div>
+    <div class="container">
+        <header>
+            <h1>One Piece Predictor</h1>
+            <p>Enter a future chapter number to forecast its release date according to a polynomial regression model
+                trained on past chapter release dates.</p>
+            <p class="suggestion">According to this <a href="https://www.youtube.com/watch?v=967oRo4Vhz8"
+                    target="_blank" rel="noopener noreferrer">video</a> by Morj, the final chapter of One Piece will be
+                about 1350 so enter that to get an estimate for the end of One Piece!</p>
+        </header>
+
+        <main class="glass-card">
+            <div class="input-group">
+                <label for="chapterInput">Chapter Number</label>
+                <input type="number" id="chapterInput" placeholder="e.g., 1200" min="1000">
+            </div>
+            <button id="predictBtn">Predict Release Date</button>
+
+            <div id="resultContainer" class="result-container hidden">
+                <h2>Predicted Date</h2>
+                <div id="resultDate" class="result-date"></div>
+            </div>
+            <div id="loading" class="hidden">Calculating...</div>
+        </main>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
